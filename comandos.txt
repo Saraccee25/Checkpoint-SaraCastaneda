@@ -1,0 +1,310 @@
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio
+$ pwd
+/c/Users/USUARIO/OneDrive/Escritorio
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio
+$ mkdir Repo checkpoint
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio
+$ cd checkpoint
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint
+$ git init
+Initialized empty Git repository in C:/Users/USUARIO/OneDrive/Escritorio/checkpoint/.git/
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git config user.name "Checkpoint-SaraCastaneda"
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git config user.name
+Checkpoint-SaraCastaneda
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git config user.email "saracastanedaecheverri@gmail.com"
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git config user.email
+saracastanedaecheverri@gmail.com
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git remote add origin https://github.com/Saraccee25/Checkpoint-SaraCastaneda.git
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git remote -v
+origin  https://github.com/Saraccee25/Checkpoint-SaraCastaneda.git (fetch)
+origin  https://github.com/Saraccee25/Checkpoint-SaraCastaneda.git (push)
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ touch main.js index.html
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ ls
+index.html  main.js
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        main.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git add .
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   main.js
+
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git commit -m "commit 01 de saraCastaneda"
+[main (root-commit) 5cf6ef4] commit 01 de saraCastaneda
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 244 bytes | 244.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Saraccee25/Checkpoint-SaraCastaneda.git
+ * [new branch]      main -> main
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git branch <feature>
+bash: syntax error near unexpected token `newline'
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git branch
+* main
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git branch feature
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git branch
+  feature
+* main
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ cd Hardware
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/Hardware (feature)
+$ touch resumen.txt
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/Hardware (feature)
+$ cd ..
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ cd Software
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/Software (feature)
+$ touch resumen.txt
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/Software (feature)
+$ cd..
+bash: cd..: command not found
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/Software (feature)
+$ cd ..
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ cd SeguridadInformatica
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/SeguridadInformatica (feature)
+$ touch resumen.txt
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/SeguridadInformatica (feature)
+$ git status
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../Hardware/
+        ./
+        ../Software/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/SeguridadInformatica (feature)
+$ git add .
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/SeguridadInformatica (feature)
+$ git status
+On branch feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   resumen.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../Hardware/
+        ../Software/
+
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/SeguridadInformatica (feature)
+$ git add .
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/SeguridadInformatica (feature)
+$ git status
+On branch feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   resumen.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../Hardware/
+        ../Software/
+
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/SeguridadInformatica (feature)
+$ git add Hardware
+fatal: pathspec 'Hardware' did not match any files
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/SeguridadInformatica (feature)
+$ git add .
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint/SeguridadInformatica (feature)
+$ cd ..
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ git status
+On branch feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   SeguridadInformatica/resumen.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hardware/
+        Software/
+
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ git add .
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ git status
+On branch feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Hardware/resumen.txt
+        new file:   SeguridadInformatica/resumen.txt
+        new file:   Software/resumen.txt
+
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ git push origin feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Saraccee25/Checkpoint-SaraCastaneda/pull/new/feature
+remote:
+To https://github.com/Saraccee25/Checkpoint-SaraCastaneda.git
+ * [new branch]      feature -> feature
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ git commit -m "commit 02 SaraCastaneda"
+[feature db37ff3] commit 02 SaraCastaneda
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ git push
+fatal: The current branch feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 379 bytes | 379.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Saraccee25/Checkpoint-SaraCastaneda.git
+   5cf6ef4..db37ff3  feature -> feature
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ git checkout main
+Deletion of directory 'Software' failed. Should I try again? (y/n) y
+Deletion of directory 'Software' failed. Should I try again? (y/n) y
+Deletion of directory 'Software' failed. Should I try again? (y/n) n
+Switched to branch 'main'
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ mv main.js resumenHardware.txt
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ mv index.html resumenSoftware.txt
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ checkout feature
+bash: checkout: command not found
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ git checkout feature
+Switched to branch 'feature'
+D       index.html
+D       main.js
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ ls
+Hardware/  SeguridadInformatica/  Software/  resumenHardware.txt  resumenSoftware.txt
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (feature)
+$ git checkout main
+Deletion of directory 'Software' failed. Should I try again? (y/n) n
+Switched to branch 'main'
+D       index.html
+D       main.js
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ echo "Ejemplos de software:" >> resumenSoftware.txt
+echo "1. Microsoft Office" >> resumenSoftware.txt
+echo "2. Adobe Photoshop" >> resumenSoftware.txt
+echo "3. Google Chrome" >> resumenSoftware.txt
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ echo "Memorias principales de la computadora:" >> resumenHardware.txt
+echo "1. Memoria RAM (Random Access Memory)" >> resumenHardware.txt
+echo "2. Memoria caché" >> resumenHardware.txt
+echo "3. Memoria ROM (Read-Only Memory)" >> resumenHardware.txt
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$ touch comandos.txt
+
+USUARIO@DESKTOP-T0JGTP0 MINGW64 ~/OneDrive/Escritorio/checkpoint (main)
+$
